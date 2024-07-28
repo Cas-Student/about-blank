@@ -9,3 +9,4 @@ function GoTo() {
     ifra.height = "100%";
     doc.body.appendChild(ifra);
 }
+
