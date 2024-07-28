@@ -2,8 +2,8 @@
 <html>
     <head></head>
     <body>
-    <form id="url" name="url" onsubmit="alert(Hello)">
-        <label for="url">Enter url (with https://): </label>
+    <form id="form" onsubmit="alert(Hello)">
+        <label>Enter url (with https://): </label>
         <input id="url" name="url" type="text">
         <br>
         <input type="submit">
@@ -11,7 +11,9 @@
     <p id="Text"></p>
     <script src="script.js?v=1.0.1"></script>
     <script>
-        document.getElementById("Text").innerHTML = document.getElementById("url").innerText;
+        document.getElementById("form").addEventListener("submit", function() {
+            document.getElementById("Text").innerHTML = document.getElementById("url").innerText
+        });
     </script>
     </body>
 </html>
