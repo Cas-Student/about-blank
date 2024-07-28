@@ -1,4 +1,7 @@
-const tab = window.open("", "_blank", true);
+const tab = window.open("about:blank", "_blank", true);
 const doc = tab.document;
 
-doc.write("Hello World!");
+const ifra = doc.createElement("iframe");
+ifra.src = "start.hcps.org";
+
+doc.body.appendChild(ifra);
